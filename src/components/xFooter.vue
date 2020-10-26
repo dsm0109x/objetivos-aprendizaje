@@ -3,7 +3,7 @@
     <!-- SHAPE
     ================================================== -->
     <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
         </svg>
@@ -12,13 +12,13 @@
     
     <!-- FOOTER
     ================================================== -->
-    <footer class="py-8 py-md-11 bg-white">
+    <footer class="py-8 py-md-11 bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3">
         
             <!-- Brand -->
-            <img src="/assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
+            <img src="/logo.png" alt="..." class="footer-brand img-fluid mb-2">
 
             <!-- Text -->
             <p class="text-gray-700 mb-2">

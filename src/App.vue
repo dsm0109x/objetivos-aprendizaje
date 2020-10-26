@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <x-nav-bar></x-nav-bar>
+    <x-nav-bar :links="links"></x-nav-bar>
     <x-content></x-content>
     <x-footer></x-footer>
   </div>
@@ -17,6 +17,27 @@ export default {
     xFooter,
     xNavBar,
     xContent
+  },
+  data(){
+    return {
+      links: [{
+        name:'¿Quienes somos?',
+        url: '#!'
+      },
+      {
+        name:'Blog',
+        url: '#!'
+      },
+      {
+        name:'Saber más',
+        url: '#!'
+      },
+      {
+        name:'E-learning Querétaro',
+        url: '#!'
+      }
+      ]
+    }
   }
 }
 </script>

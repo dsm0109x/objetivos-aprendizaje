@@ -2,37 +2,53 @@
     <div>
 <!-- WELCOME
     ================================================== -->
-    <section class="pt-8 pb-11 pt-md-9 pb-md-12 py-lg-14 bg-light bg-between" style="background-image: url(assets/img/illustrations/illustration-6-cropped.png), url(assets/img/illustrations/illustration-4-cropped.png);">
+    <section class="pt-4 pb-4 bg-light bg-between">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="fade-up">
+          <div class="col-12 col-md-12 text-center">
 
-            <!-- Image (mobile) -->
-            <img src="assets/img/illustrations/illustration-8.png" alt="..." class="img-fluid mb-6 d-lg-none">
-            
-            <!-- Heading -->
-            <h1 class="display-2 font-weight-bold">
-              Designed secure. <br>
-              Built for anything.
-            </h1>
-
+           
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-6 mb-md-8">
-              Forward thinking businesses use our cloud backup service to ensure data reliability and safety.
+            <p class="font-size-lg  mb-2 mb-md-4">
+              Redacta tus objetivos de aprendizaje
             </p>
 
-            <!-- Button -->
-            <a href="#!" class="btn btn-primary mr-1 lift">
-              Get started <i class="fe fe-arrow-right ml-3"></i>
-            </a>
-            <a href="#!" class="btn btn-primary-soft lift">
-              Learn more
-            </a>
+            <!-- Heading -->
+            <h1 class="display-3 font-weight-bold">
+              {{textRoot}}
+            </h1>
 
           </div>
         </div> <!-- / .row -->
+        
       </div> <!-- / .container -->
+      
     </section>
+        <section class="pt-3 pb-5 pt-md-2 pb-md-7  bg-light bg-between">
+
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="card">
+              <div class="card-body">
+
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"><span class="font-weight-bold">Sujeto</span><br/>¿Quién o quiénes aprenderán (destinatarios)?</label>
+                    <input v-model="textSujeto" type="text" class="form-control" placeholder="Ingresa el sujeto del objetivo de aprendizaje" autocomplete="off">
+                  </div>
+                 
+                  <button type="submit" class="btn btn-primary w-100">Siguiente</button>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      </section>
     </div>
 </template>
 
@@ -40,7 +56,20 @@
 export default {
   name: 'xContent',
   props: {
-
+  },
+  data(){
+    return{
+      textSujeto: '[sujeto]',
+      textVerbo: '[verbo de acción]',
+      textContenido: '[contenido de aprendizaje]',
+      textCircunstancia: '[circunstancias]'
+    }
+  },
+  computed:{
+    textRoot(){
+      return this.textSujeto + ' será capaz de ' + this.textVerbo + ' ' + 
+      this.textContenido + ' ' + this.textCircunstancia
+    }
   }
 }
 </script>

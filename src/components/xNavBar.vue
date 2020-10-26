@@ -2,11 +2,11 @@
     <!-- NAVBAR
     ================================================== -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
-      <div class="container-fluid">
+      <div class="container">
 
         <!-- Brand -->
         <a class="navbar-brand" href="/index.html">
-          <img src="/assets/img/brand.svg" class="navbar-brand-img" alt="...">
+          <img src="/logo.png" class="navbar-brand-img" alt="Logo Subitus">
         </a>
 
         <!-- Toggler -->
@@ -24,30 +24,14 @@
 
           <!-- Navigation -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
-                ¿Quiénes somos?
+            <li class="nav-item dropdown" v-for="link in links" :key="link.url">
+              <a class="nav-link" :href="link.url" aria-haspopup="true" aria-expanded="false">
+                {{link.name}}
               </a>
              
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
-                Saber más
-              </a>
-             
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
-                E-learning Querétaro
-              </a>
-             
-            </li>
+            
+            
             
           </ul>
 
@@ -62,7 +46,7 @@
 export default {
   name: 'xNavBar',
   props: {
-
+    links: Array,
   }
 }
 </script>
