@@ -9,18 +9,19 @@
          
 <div class="card bg-dark text-white">
               <div class="card-body">
+
                   <div class="form-group">
-                    <label for="sujeto">
-                        <span style="text-weight:bold; font-size:1.4em;">Sujeto</span>
+                    <label for="Verbo"><span style="text-weight:bold; font-size:1.4em;">Verbo</span>
 <br/>
-                        ¿Quién o quiénes aprenderán (destinatarios)?
-                    </label>
-                    <input @keyup="updateTextSujetoEmit" v-model="textSujeto" type="text" class="form-control" id="sujeto" autocomplete="off">
+                        ¿Qué hará?</label>
+                    <input @keyup="updateTextVerboEmit" v-model="textVerbo" type="text" class="form-control" id="Verbo" autocomplete="off">
                   </div>
-                 <router-link to="/verbo" class="btn btn-light">Siguiente</router-link>
+                 <router-link to="/aprendizaje" class="btn btn-light">Siguiente</router-link>
 
               </div>
             </div>
+            
+            <router-link to="/" class="btn btn-link float-left"> anterior</router-link>
            
 
           </div>
@@ -32,14 +33,14 @@
 <script>
 
 export default {
-    name:'Home',
+    name:'Verbo',
     props: {
-        textSujeto: String,
-        updateTextSujeto: Function
+        textVerbo: String,
+        updateTextVerbo: Function
     },
     methods: {
-        updateTextSujetoEmit(){
-            this.$emit('updateTextSujetoEmit', this.textSujeto)
+        updateTextVerboEmit(){
+            this.$emit('updateTextVerboEmit', this.textVerbo)
         }
     }
 }

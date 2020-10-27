@@ -1,28 +1,21 @@
 <template>
 <div>
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
-        </svg>
-      </div>
-    </div>
+
     
     <!-- FOOTER
     ================================================== -->
-    <footer class="py-8 py-md-11 bg-dark">
+    <footer class="py-5 py-md-7 ">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-3">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-6 col-lg-6 text-center">
         
             <!-- Brand -->
-            <img src="/logo.png" alt="..." class="footer-brand img-fluid mb-2">
+            <img src="/logo.png" alt="logo subitus" class="footer-brand img-fluid mb-2" style="max-width:140px !important;">
 
             <!-- Text -->
-            <p class="text-gray-700 mb-2">
-              A better way to build.
+            <p class="mb-2">
+              Expertos en e-learning<br/>
+Soluciones personalizadas para la capacitación a distancia y desarrollo de cursos elearning
             </p>
 
             <!-- Social -->
@@ -50,149 +43,8 @@
             </ul>
 
           </div>
-          <div class="col-6 col-md-4 col-lg-2">
         
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Products
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Page Builder
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  UI Kit
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Styleguide
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#!" class="text-reset">
-                  Changelog
-                </a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Services
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Documentation
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Changelog
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Pagebuilder
-                </a>
-              </li>
-              <li>
-                <a href="#!" class="text-reset">
-                  UI Kit
-                </a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Connect
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Page Builder
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  UI Kit
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Styleguide
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Documentation
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Changelog
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#!" class="text-reset">
-                  Changelog
-                </a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-        
-            <!-- Heading -->
-            <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Legal
-            </h6>
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Documentation
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Changelog
-                </a>
-              </li>
-              <li>
-                <a href="#!" class="text-reset">
-                  Pagebuilder
-                </a>
-              </li>
-            </ul>
-
-          </div>
+      
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </footer>

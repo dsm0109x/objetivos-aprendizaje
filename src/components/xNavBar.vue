@@ -50,3 +50,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.navbar {
+    padding: 0.5rem 0;
+}
+</style>

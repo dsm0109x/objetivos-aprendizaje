@@ -1,32 +1,72 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<div id ="app">
+   <x-nav-bar :links="links"/>
+    <x-content 
+    :textSujeto="textSujeto" 
+    :textVerbo="textVerbo" 
+    :textContenido="textContenido" 
+    :textCircunstancia="textCircunstancia" />
+    <router-view
+    :textSujeto="textSujeto" 
+    :textVerbo="textVerbo" 
+    :textContenido="textContenido" 
+    :textCircunstancia="textCircunstancia"
+    :updateTextSujeto="updateTextSujeto"
+    @updateTextSujetoEmit="updateTextSujeto"
+    @updateTextVerboEmit="updateTextVerbo"
+    ></router-view>
+    <x-footer/>
+</div>
 </template>
 
+<script>
+
+import xFooter from './components/xFooter.vue'
+import xNavBar from './components/xNavBar.vue'
+import xContent from './components/xContent.vue'
+export default {
+    name:'App',
+    components: {
+      xNavBar,
+      xContent,
+      xFooter
+    },
+    methods:{
+      updateTextSujeto(value){
+        this.textSujeto = value
+      },
+      updateTextVerbo(value){
+        this.textVerbo = value
+      },
+    },
+    data(){
+    return {
+      textSujeto: '[sujeto]',
+      textVerbo: '[verbo de acción]',
+      textContenido: '[contenido de aprendizaje]',
+      textCircunstancia: '[circunstancias]',
+      links: [{
+        name:'¿Quienes somos?',
+        url: '#!'
+      },
+      {
+        name:'Blog',
+        url: '#!'
+      },
+      {
+        name:'Saber más',
+        url: '#!'
+      },
+      {
+        name:'E-learning Querétaro',
+        url: '#!'
+      }
+      ]
+    }
+  },
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

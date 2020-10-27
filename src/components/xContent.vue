@@ -2,7 +2,7 @@
     <div>
 <!-- WELCOME
     ================================================== -->
-    <section class="pt-4 pb-4 bg-light bg-between">
+    <section class="pt-4 pb-4 ">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-12 text-center">
@@ -14,7 +14,7 @@
             </p>
 
             <!-- Heading -->
-            <h1 class="display-3 font-weight-bold">
+            <h1 class="display-4 font-weight-bold">
               {{textRoot}}
             </h1>
 
@@ -24,31 +24,8 @@
       </div> <!-- / .container -->
       
     </section>
-        <section class="pt-3 pb-5 pt-md-2 pb-md-7  bg-light bg-between">
 
-    <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="card">
-              <div class="card-body">
-
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1"><span class="font-weight-bold">Sujeto</span><br/>¿Quién o quiénes aprenderán (destinatarios)?</label>
-                    <input v-model="textSujeto" type="text" class="form-control" placeholder="Ingresa el sujeto del objetivo de aprendizaje" autocomplete="off">
-                  </div>
-                 
-                  <button type="submit" class="btn btn-primary w-100">Siguiente</button>
-                </form>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-      </section>
+       
     </div>
 </template>
 
@@ -56,14 +33,10 @@
 export default {
   name: 'xContent',
   props: {
-  },
-  data(){
-    return{
-      textSujeto: '[sujeto]',
-      textVerbo: '[verbo de acción]',
-      textContenido: '[contenido de aprendizaje]',
-      textCircunstancia: '[circunstancias]'
-    }
+    textSujeto: String,
+    textVerbo: String,
+    textContenido: String,
+    textCircunstancia: String
   },
   computed:{
     textRoot(){
